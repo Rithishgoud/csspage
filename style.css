@@ -201,6 +201,7 @@ Navigation links
     .nav-actions {
         display: none;
     }
+}
 
     /* Navigation links */
     .nav-links {
@@ -243,4 +244,44 @@ Navigation links
         display: flex;
     }
 
+
+/* Smooth transitions */
+.nav-links a,
+.login-btn,
+.cart-btn,
+.menu-toggle {
+    transition: color 0.25s ease,
+                background-color 0.25s ease,
+                transform 0.25s ease;
 }
+
+/* Navigation hover */
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Login hover */
+.login-btn:hover {
+    color: #2563eb;
+}
+
+/* Cart hover */
+.cart-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Hamburger hover */
+.menu-toggle:hover {
+    color: #2563eb;
+}
+
+/* Keyboard focus visibility */
+.navbar a:focus-visible,
+.menu-toggle:focus-visible,
+.search-box input:focus-visible,
+.search-box button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+

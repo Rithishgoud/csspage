@@ -230,10 +230,7 @@ Navigation links
     }
 
     /* Login and cart */
-    .nav-actions {
-        gap: 20px;
-        padding: 10px 0 5px;
-    }
+
 
     /* Show elements when menu is open */
     .navbar.active .nav-links,

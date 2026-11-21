@@ -134,3 +134,112 @@ Navigation links
         flex-direction: column;
     }
 }
+
+/* Tablet responsive design */
+@media (max-width: 1024px) {
+
+    .navbar {
+        padding: 15px 24px;
+        gap: 16px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .search-box {
+        max-width: 240px;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+
+    /* Main navbar */
+    .navbar {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 16px 20px;
+        gap: 0;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 24px;
+        align-self: flex-start;
+    }
+
+    /* Hamburger button */
+    .menu-toggle {
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    /* Hide menu items initially */
+    .nav-links,
+    .search-box,
+    .nav-actions {
+        display: none;
+    }
+
+    /* Navigation links */
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 100%;
+        gap: 0;
+
+        padding: 15px 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    /* Search box */
+    .search-box {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 15px;
+    }
+
+    /* Login and cart */
+    .nav-actions {
+        gap: 20px;
+        padding: 10px 0 5px;
+    }
+
+    /* Show elements when menu is open */
+    .navbar.active .nav-links,
+    .navbar.active .search-box,
+    .navbar.active .nav-actions {
+        display: flex;
+    }
+
+}

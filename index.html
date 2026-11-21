@@ -14,66 +14,101 @@
 <body>
 
     <header class="header">
-
         <nav class="navbar">
 
-            <!-- Logo -->
-            <a href="#" class="logo">
-                ShopNow
-            </a>
 
-            <!-- Navigation links -->
-            <ul class="nav-links" id="navLinks">
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <p class="hero-label">WELCOME TO SHOPNOW</p>
 
-                <li>
-                    <a href="#">Home</a>
-                </li>
+                    <h1>Discover Products You'll Love</h1>
 
-                <li>
-                    <a href="#">Products</a>
-                </li>
+                    <p>
+                        Find the latest trends and best deals
+                        on products you use every day.
+                    </p>
 
-                <li>
-                    <a href="#">Categories</a>
-                </li>
+                    <a href="#products" class="shop-btn">
+                        Shop Now
+                    </a>
+                </div>
+            </section>
 
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-            </ul>
-            <div> <!-- Search bar -->
-                <div class="search-box">
-
-                    <input type="text" placeholder="Search products..." aria-label="Search products">
-
-                    <button type="button">
-                        Search
-                    </button>
-
+            <!-- Products Section -->
+            <section class="products-section" id="products">
+                <div class="section-heading">
+                    <h2>Featured Products</h2>
+                    <p>Explore our popular products</p>
                 </div>
 
-            </div>
+                <div class="product-container">
 
+                    <article class="product-card">
+                        <img src="https://placehold.co/400x300?text=Headphones" alt="Wireless headphones">
 
-            <!-- User actions -->
-            <div class="nav-actions">
+                        <div class="product-info">
+                            <h3>Wireless Headphones</h3>
+                            <p class="price">₹2,999</p>
+                            <button type="button" class="product-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
 
-                <a href="#" class="login-btn">
-                    Login
-                </a>
+                    <article class="product-card">
+                        <img src="https://placehold.co/400x300?text=Keyboard" alt="Mechanical keyboard">
 
-                <a href="#" class="cart-btn">
-                    Cart (0)
-                </a>
+                        <div class="product-info">
+                            <h3>Mechanical Keyboard</h3>
+                            <p class="price">₹4,999</p>
+                            <button type="button" class="product-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
 
-            </div>
+                    <article class="product-card">
+                        <img src="https://placehold.co/400x300?text=Smartwatch" alt="Smartwatch">
 
-            <!-- Mobile hamburger button -->
-            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu"
-                aria-expanded="false" aria-controls="navLinks">
-                ☰
-            </button>
+                        <div class="product-info">
+                            <h3>Smart Watch</h3>
+                            <p class="price">₹3,499</p>
+                            <button type="button" class="product-btn">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Categories Section -->
+            <section class="categories-section" id="categories">
+                <h2>Shop by Category</h2>
+
+                <div class="category-container">
+                    <div class="category-card">Electronics</div>
+                    <div class="category-card">Fashion</div>
+                    <div class="category-card">Accessories</div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <h2>About ShopNow</h2>
+                <p>
+                    ShopNow makes online shopping simple.
+                    Discover useful products, explore categories,
+                    and enjoy a smooth shopping experience.
+                </p>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© 2026 ShopNow. All rights reserved.</p>
+            </footer>
+
 
 
         </nav>
